@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>EmpathEase: Conversations that last, moments that matter</title>
+  <link rel="icon" href="{% static 'media/WebEmpathEase.ico' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{% static 'Styles/stylesIndex.css' %}">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+</head>
+
+<body>
+  <header id="myHeader" class="">
+    <img id="logo" src="{% static 'media/iso.jpg' %}" alt="EmpathEase" style="width: 200px; height: auto;">
+    <nav>
+      <a href="#vision">ChatterBot</a>
+      <a href="#journey">Journey</a>
+      <a href="#chatEase">Vision</a>
+      <a href="#health">Mission</a>
+      
+      <button id="openmenu">
+        <span></span>
+        <span></span>
+        <span class="visually-hidden">Open Menu</span>
+      </button>
+    </nav>
+  </header>
+
+  <div id="page" class="">
+
+    <section id="vision"
+      style="background-image:url({% static 'media/visionBG.jpeg' %});background-repeat: no-repeat;object-fit: cover;background-size: cover;">
+      <div class="vision-content">
+        <h1>Our Bot</h1>
+        <div class="get-started-button">
+          <div class="button-container">
+            <a href="/login">Lets Begin</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" style="background-image:url({% static 'media/chatEaseBG.jpeg' %});background-repeat: no-repeat;object-fit: contain;background-size: cover;">
+      <div>
+        <span>discover</span>
+        <h1>Explore your</h1>
+        <h1>own Journey</h1>
+        <hr>
+        <p>Discover plenty of interactions and customization inside our webapp that will make your experience totally about you.</p>
+        <a href="/register">Start your History</a>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--one">
+            <div>
+              <h2>Diary</h2>
+              <p>Write down your feelings to start keeping track and care of yourself.</p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--two">
+            <div>
+              <h2>Mood Tracker</h2>
+              <p>Pick your daily emotions to figure out which way you feel the most in your life.</p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--three">
+            <div>
+              <h2>Reports</h2>
+              <p>View complete reports of the data we collect and recive customized reviews.</p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--four">
+            <div>
+              <h2>Profile</h2>
+              <p>Customize your profile to make your experience full of your preferences.</p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--five">
+            <div>
+              <h2>Aspect</h2>
+              <p>Join ton of diferents communities that will make you feel better with advices and historys.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="chatEase"
+      style="background-image:url({% static 'media/journeyBG.jpeg' %});background-repeat: no-repeat;object-fit: cover;background-size: cover;">
+      
+      <h1>Understand the mind to save a life!</h1>
+    </section>
+
+    <section id="health"
+      style="background-image:url({% static 'media/healthBG.jpg' %});background-repeat: no-repeat;object-fit: cover;background-size: cover;">
+      <span>Health is Wealth</span><br>
+      <h1>Health Help</h1>
+    </section>
+
+  </div>
+
+  <footer id="footer" class="section-footer">
+    <div class="footer">
+      <div class="footer-flex">
+        <div class="footer-col">
+          <a href="/" aria-current="page" class="logo-link w-inline-block w--current">
+            <img src="{% static 'media/Horizontal-Icon-EmpathEasepx.png' %}" loading="lazy" alt="EmpathEase logo" class="logo">
+          </a>
+          <div class="footer-tagline">Conversations that last, moments that matter.</div>
+          <a href="/login" class="button-primary w-inline-block">
+            <div class="button-text">Join ChatEase</div>
+          </a>
+        </div>
+        <div class="footer-col-2">
+          <div class="footer-heading">Products</div>
+          <a href="http://127.0.0.1:8000/abc.html" class="footer-link">Routines</a>
+          <a href="http://localhost:8080/traker" class="footer-link">Data Tracker</a>
+          <a href="http://localhost:8080/chatEase" class="footer-link">Chatbot</a>
+        </div>
+        <div class="footer-col-2">
+          <div class="footer-heading">Company</div>
+          <a href="http://localhost:8080/about" class="footer-link">About</a>        
+          <a href="http://localhost:8080/osozk" class="footer-link">Blog</a>
+          <a href="http://localhost:8080/contact" class="footer-link">Contact Us</a>
+          
+        </div>
+        <div class="footer-col-2 last">
+          <div class="footer-heading">Legal</div>
+          <a href="http://localhost:8080/privacy" class="footer-link">Privacy</a>
+          <a href="http://localhost:8080/terms" class="footer-link">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-year">©2023 EmpathEase Alejandro Osorno, Inc.</div>
+        <div class="footer-socials-flex">
+          <a href="https://twitter.com/osozszzz" class="social-icon-link w-inline-block">
+            <img src="{% static 'media/X-Icon.svg' %}" loading="lazy" alt="Twitter logo" class="social-icon">
+          </a>
+          <a href="https://github.com/osozzz" class="social-icon-link w-inline-block">
+            <img src="{% static 'media/Github-Icon.svg' %}" loading="lazy" alt="git logo" class="social-icon">
+          </a>
+          <a href="https://www.linkedin.com/in/juanosornodev2602/" class="social-icon-link w-inline-block">
+            <img src="{% static 'media/Lkdn-Icon.svg' %}" loading="lazy" alt="linkedin logo" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/osozsz.00/" class="social-icon-link w-inline-block">
+            <img src="https://uploads-ssl.webflow.com/6408bea3de5aef58b7e197d4/646d1f0026c4941c3a789671_instagram-icon.svg" loading="lazy" alt="Instagram logo" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+  <script src="{% static 'Scripts/scriptIndex.js' %}"></script>
+</body>
+</html>
