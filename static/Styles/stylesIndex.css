@@ -1,7 +1,7 @@
 body {
   line-height: 1.6;
   color: #fff;
-  background: pink;
+  background-color: rgb(68, 170, 78);
   font-size: 18px;
   font-weight: 400;
   font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif !important;
@@ -15,6 +15,7 @@ body.stop {
 #page {
   position: relative;
   transition: 1s all ease-in-out;
+
 }
 #page.menuopen {
   opacity: 0.6;

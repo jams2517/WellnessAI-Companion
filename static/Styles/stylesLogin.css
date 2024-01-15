@@ -17,7 +17,7 @@ main {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: pink;
+  background-color: rgb(203, 225, 171);
   padding: 2rem;
   display: flex;
   align-items: center;
